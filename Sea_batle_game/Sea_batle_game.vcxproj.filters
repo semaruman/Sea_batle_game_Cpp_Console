@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Турнирная таблица">
+      <UniqueIdentifier>{2a509180-21e1-48ab-8ef6-593dc8cd6970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Турнирная таблица%28заголовки%29">
+      <UniqueIdentifier>{ca0db2c5-c3e4-4b1d-a697-8f8a41cf3e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Игра%28заголовки%29">
+      <UniqueIdentifier>{937835e3-2f45-455b-8019-6c90e60421de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Игра">
+      <UniqueIdentifier>{d49bddef-e755-4042-9f72-6576cd5fa51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Игра%28заголовки%29\kill sheep">
+      <UniqueIdentifier>{ec0d4f6b-2774-4f5b-8fd4-85f7998be9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Игра\kill sheep">
+      <UniqueIdentifier>{000e028e-f0cd-4c35-9644-c4bd7c93c4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Pole%28заголовки%29">
+      <UniqueIdentifier>{6ac9d865-78c1-4608-86c5-67e5fc7bad11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Игра\Pole">
+      <UniqueIdentifier>{e77459c4-1b5b-4d01-9a65-97dbe2287f39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="player_menu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="print_turnament_table.cpp">
+      <Filter>Исходные файлы\Турнирная таблица</Filter>
+    </ClCompile>
+    <ClCompile Include="play_stuped_computer.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="play_smart_computer.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="play_friend.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="player_motion.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="coord_in.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="computer_motion.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="player_ship_place.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_linkor_sheep.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="player_win.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="computer_win.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
+    </ClCompile>
+    <ClCompile Include="print_poles.cpp">
+      <Filter>Исходные файлы\Игра\Pole</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_3_deck_sheep_1.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_3_deck_sheep_2.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_2_deck_sheep_1.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_2_deck_sheep_2.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_2_deck_sheep_3.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>Исходные файлы\Турнирная таблица</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_count_ships.cpp">
+      <Filter>Исходные файлы\Игра\Pole</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_1_deck_sheep_1.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_1_deck_sheep_2.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_1_deck_sheep_3.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="kill_1_deck_sheep_4.cpp">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="player_menu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="print_turnament_table.h">
+      <Filter>Файлы заголовков\Турнирная таблица%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="CONSTANTS.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="play_stuped_computer.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="play_smart_computer.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="play_friend.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="console_clear.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="player_motion.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="coord_in.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="computer_motion.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="player_ship_place.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_linkor_sheep.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="player_win.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="computer_win.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="computer_ship_place.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="computer_pole.h">
+      <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="player_pole.h">
+      <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="print_poles.h">
+      <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_3_deck_sheep_1.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_3_deck_sheep_2.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_2_deck_sheep_1.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_2_deck_sheep_2.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_2_deck_sheep_3.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="database.h">
+      <Filter>Файлы заголовков\Турнирная таблица%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_1_deck_sheep_1.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_1_deck_sheep_2.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_1_deck_sheep_3.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="kill_1_deck_sheep_4.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29\kill sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_count_ships.h">
+      <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
