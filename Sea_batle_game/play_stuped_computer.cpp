@@ -12,7 +12,6 @@
 #include "print_poles.h"
 #include "database.h"
 #include "draw_count_ships.h"
-#include "print_poles.h"
 
 // временная функция для вывода полей
 void temp_print_poles(char PL_POLE[FIELD_SIZE][FIELD_SIZE], char COMP_POLE[FIELD_SIZE][FIELD_SIZE]) {
@@ -95,9 +94,6 @@ namespace play {
 				//pole::print_poles(); // вывод поля //-----------TEMP-------------
 				//temp_print_poles(PL_POLE, COMP_POLE);
 
-				draw_count_ships(player_sheeps, computer_sheeps);
-				std::cout << std::endl;
-
 				hit_counter -= COUNT_MOTIONS; // -1
 				int* temp_array = play::player_motion(); // ход игрока
 
@@ -112,8 +108,6 @@ namespace play {
 					temp_print_poles(PL_POLE, COMP_POLE);
 
 					COMPUTER_HP -= 1;
-
-					
 
 					draw_count_ships(player_sheeps, computer_sheeps);
 					std::cout << std::endl;
@@ -151,10 +145,10 @@ namespace play {
 					//pole::print_poles(); // вывод поля
 
 					PL_POLE[temp_array[0]][temp_array[1]] = 'X';
-					temp_print_poles(PL_POLE, COMP_POLE);
+					//temp_print_poles(PL_POLE, COMP_POLE); //---------------------Вывод поля
 
-					draw_count_ships(player_sheeps, computer_sheeps);
-					std::cout << std::endl;
+					//draw_count_ships(player_sheeps, computer_sheeps);
+					//std::cout << std::endl;
 				}
 				else {
 
@@ -162,10 +156,10 @@ namespace play {
 					//pole::print_poles(); // вывод поля
 
 					PL_POLE[temp_array[0]][temp_array[1]] = '0';
-					temp_print_poles(PL_POLE, COMP_POLE);
+					//temp_print_poles(PL_POLE, COMP_POLE); //---------------------Вывод поля
 
-					draw_count_ships(player_sheeps, computer_sheeps);
-					std::cout << std::endl;
+					//draw_count_ships(player_sheeps, computer_sheeps);
+					//std::cout << std::endl;
 				}
 
 				if (computer_win(player_sheeps)) {
