@@ -12,6 +12,7 @@
 #include "print_poles.h"
 #include "database.h"
 #include "draw_count_ships.h"
+#include "console_clear.h"
 
 // временная функция для вывода полей
 void temp_print_poles(char PL_POLE[FIELD_SIZE][FIELD_SIZE], char COMP_POLE[FIELD_SIZE][FIELD_SIZE]) {
@@ -105,10 +106,13 @@ namespace play {
 					//pole::print_poles(); // вывод поля
 
 					COMP_POLE[temp_array[0]][temp_array[1]] = 'X';
+
+					console_clear();
 					temp_print_poles(PL_POLE, COMP_POLE);
 
 					COMPUTER_HP -= 1;
 
+					
 					draw_count_ships(player_sheeps, computer_sheeps);
 					std::cout << std::endl;
 				}
@@ -118,11 +122,14 @@ namespace play {
 					//pole::print_poles(); // вывод поля
 
 					COMP_POLE[temp_array[0]][temp_array[1]] = '0';
+
+					console_clear();
 					temp_print_poles(PL_POLE, COMP_POLE);
 
 					draw_count_ships(player_sheeps, computer_sheeps);
 					std::cout << std::endl;
 				}
+
 
 				//Проверка, победил ли игрок
 				if (player_win(computer_sheeps)) {
@@ -161,6 +168,7 @@ namespace play {
 					//draw_count_ships(player_sheeps, computer_sheeps);
 					//std::cout << std::endl;
 				}
+
 
 				if (computer_win(player_sheeps)) {
 					const char* res = "Компьютер победил!";
