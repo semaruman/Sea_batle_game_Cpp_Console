@@ -2,7 +2,7 @@
 #include "CONSTANTS.h"
 
 namespace play {
-	bool computer_win(int player_coords[coords][SHEEP_SIZE])
+	bool computer_win(int player_coords[coords][SHEEP_SIZE]) // функция проверяет, победил ли компьютер
 	{
 		int counter = 0;
 

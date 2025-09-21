@@ -76,9 +76,8 @@ namespace play {
 			{'.', '.', '.', '.', '.', '.', '.', '.', '.', '.'},
 		};
 		//-------------------------------------
-		int seconds = 0;
 
-		// Суммарно клеток во всех кораблях=20 (у одного игрока)
+		// Суммарно клеток во всех кораблях = 20 (у каждого игрока)
 		int PLAYER_HP = SHEEP_SIZE, COMPUTER_HP = SHEEP_SIZE; // распределение клеток игроку и компьютеру
 		int hit_counter; // счётчик ходов
 
@@ -89,7 +88,7 @@ namespace play {
 
 		while (PLAYER_HP > 0 && COMPUTER_HP > 0) {
 
-			hit_counter = COUNT_MOTIONS;
+			hit_counter = COUNT_MOTIONS; 
 			while (hit_counter > 0) {
 
 				//pole::print_poles(); // вывод поля //-----------TEMP-------------

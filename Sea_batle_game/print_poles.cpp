@@ -3,9 +3,9 @@
 #include "player_pole.h"
 #include "computer_pole.h"
 
-namespace pole {
+namespace pole { 
 
-	void print_poles() {
+	void print_poles() { // Функция отвечает за вывод игровых полей игрока и компьютера
 
 		//----- Вывод верхней строки числовых обозначений
 		std::cout << "  ";

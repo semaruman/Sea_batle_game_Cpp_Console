@@ -1,5 +1,20 @@
 #include <iostream>
 #include "CONSTANTS.h"
+/*
+#include "player_motion.h"
+#include "computer_motion.h"
+#include "coord_in.h"
+#include "player_ship_place.h"
+#include "player_win.h"
+#include "computer_win.h"
+#include "computer_ship_place.h"
+#include "computer_pole.h"
+#include "player_pole.h"
+#include "print_poles.h"
+#include "database.h"
+#include "draw_count_ships.h"
+#include "console_clear.h"
+*/
 
 namespace play {
 	void play_smart_computer() {

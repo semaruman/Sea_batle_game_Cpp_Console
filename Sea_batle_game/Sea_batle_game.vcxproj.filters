@@ -204,4 +204,9 @@
       <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

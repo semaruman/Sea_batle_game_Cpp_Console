@@ -11,8 +11,10 @@
 #include "kill_3_deck_sheep_2.h"
 #include "kill_linkor_sheep.h"
 
+// Функция отвечает за отображение количества всех типов живых кораблей двух игроков
+// (слева - игрок1, справа - игрок2)
 
-void draw_count_ships(int first_coords_matrix[2][SHEEP_SIZE], int second_coords_matrix[2][SHEEP_SIZE])
+void draw_count_ships(int first_coords_matrix[2][SHEEP_SIZE], int second_coords_matrix[2][SHEEP_SIZE]) 
 {
 	int count_first{ 0 }, count_second{ 0 };
 

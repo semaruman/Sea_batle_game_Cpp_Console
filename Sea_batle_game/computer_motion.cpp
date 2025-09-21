@@ -1,7 +1,7 @@
 #include <iostream>
 
 namespace play {
-	int* computer_motion() {
+	int* computer_motion() { // Функция отвечает за ход "глупого" компьютера
 		int x, y;
 		int coords[2];
 
