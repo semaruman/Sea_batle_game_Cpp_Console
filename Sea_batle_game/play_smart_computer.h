@@ -1,5 +1,5 @@
 #pragma once
 
 namespace play {
-	void play_smart_computer();
+	const char* play_smart_computer();
 }

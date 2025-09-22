@@ -24,9 +24,15 @@ namespace menu {
 
 			switch (menu_value) {
 			case 1:
-				turnament_table::print_turnament_table();
+			    {
+				    turnament_table::print_turnament_table();
+				    std::cout << "¬ведите что-нибудь дл€ продолжени€..." << std::endl;
+					char temp[255];
+					std::cin >> temp;
+					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-				console_clear();
+				    console_clear();
+			    }
 				break;
 
 			case 2:
@@ -34,12 +40,24 @@ namespace menu {
 				std::cout << "0 - выход" << std::endl;
 				std::cout << "1 - играть с глупым компьютером" << std::endl;
 				std::cout << "иначе - играть с умным компьютером" << std::endl;
-				std::cin >> pc_play_menu;
+				try {
+					std::cin >> pc_play_menu;
+					pc_play_menu += 1;
+					pc_play_menu -= 1;
+				}
+				catch (...) {
+					continue;
+				}
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				
 				if (pc_play_menu == 1) {
 
 					console_clear();
 					play::play_stuped_computer();
+					std::cout << "¬ведите что-нибудь дл€ продолжени€..." << std::endl;
+					char temp[255];
+					std::cin >> temp;
+					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				}
 				else if (pc_play_menu == 0) {
 
@@ -50,6 +68,10 @@ namespace menu {
 
 					console_clear();
 					play::play_smart_computer();
+					std::cout << "¬ведите что-нибудь дл€ продолжени€..." << std::endl;
+					char temp[255];
+					std::cin >> temp;
+					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				}
 				console_clear();
 				break;
@@ -57,12 +79,15 @@ namespace menu {
 			case 3:
 
 				console_clear();
-
-				play::play_friend();
-
-				console_clear();
-				break;
-
+				{
+					play::play_friend();
+					std::cout << "¬ведите что-нибудь дл€ продолжени€..." << std::endl;
+					char temp[255];
+					std::cin >> temp;
+					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+					console_clear();
+					break;
+				}
 			case 0:
 
 				console_clear();

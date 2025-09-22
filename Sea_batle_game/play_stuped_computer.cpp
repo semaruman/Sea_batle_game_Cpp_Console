@@ -132,7 +132,8 @@ namespace play {
 
 				//Проверка, победил ли игрок
 				if (player_win(computer_sheeps)) {
-					const char* res = "Игрок победил!";
+					const char* res = "Игрок победил глупого компьютера!";
+					std::cout << res << std::endl;
 					add_to_database(res);
 					return res;
 				}
@@ -170,7 +171,8 @@ namespace play {
 
 
 				if (computer_win(player_sheeps)) {
-					const char* res = "Компьютер победил!";
+					const char* res = "Глупый компьютер победил игрока!";
+					std::cout << res << std::endl;
 					add_to_database(res);
 					return res;
 				}

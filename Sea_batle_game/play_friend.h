@@ -1,5 +1,5 @@
 #pragma once
 
 namespace play {
-	void play_friend();
+	const char* play_friend();
 }
