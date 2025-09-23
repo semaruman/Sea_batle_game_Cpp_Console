@@ -52,7 +52,7 @@ namespace menu {
 				std::cout << "Выберете режим" << std::endl;
 				std::cout << "0 - выход" << std::endl;
 				std::cout << "1 - играть с глупым компьютером" << std::endl;
-				std::cout << "иначе - играть с умным компьютером" << std::endl;
+				std::cout << "другое число - играть с умным компьютером" << std::endl;
 				
 				std::cin >> tmp_pc_play_menu;
 				std::cin.clear();
