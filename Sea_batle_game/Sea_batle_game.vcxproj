@@ -152,8 +152,10 @@
     <ClCompile Include="play_stuped_computer.cpp" />
     <ClCompile Include="print_poles.cpp" />
     <ClCompile Include="print_turnament_table.cpp" />
+    <ClCompile Include="smart_computer_motion.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ARSENIY.h" />
     <ClInclude Include="database.h" />
     <ClInclude Include="computer_motion.h" />
     <ClInclude Include="computer_ship_place.h" />
@@ -183,6 +185,7 @@
     <ClInclude Include="computer_pole.h" />
     <ClInclude Include="print_poles.h" />
     <ClInclude Include="print_turnament_table.h" />
+    <ClInclude Include="smart_computer_motion.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />

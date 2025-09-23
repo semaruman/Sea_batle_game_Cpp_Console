@@ -13,6 +13,7 @@
 #include "database.h"
 #include "draw_count_ships.h"
 #include "console_clear.h"
+#include "smart_computer_motion.h"
 
 // временная функция для вывода полей
 void smart_print_poles(char PL_POLE[FIELD_SIZE][FIELD_SIZE], char COMP_POLE[FIELD_SIZE][FIELD_SIZE]) {
@@ -81,6 +82,7 @@ namespace play {
 		int PLAYER_HP = SHEEP_SIZE, COMPUTER_HP = SHEEP_SIZE; // распределение клеток игроку и компьютеру
 		int hit_counter; // счётчик ходов
 
+		bool popal = false; // попал ли умный компьютер
 
 		int player_sheeps[2][SHEEP_SIZE]; play::player_ship_place(player_sheeps); // расстановка кораблей игрока и запись всех координат в переменную
 		int computer_sheeps[2][SHEEP_SIZE]; play::computer_ship_place(computer_sheeps); // расстановка кораблей компьютера и запись всех координат в переменную
@@ -133,15 +135,16 @@ namespace play {
 			hit_counter = COUNT_MOTIONS;
 			while (hit_counter > 0) {
 				hit_counter -= COUNT_MOTIONS; // -1
-				int* temp_array = play::computer_motion(); // ход компьютера
+				int* temp_array = smart_computer_motion(popal); // ход компьютера
 
 				if (coord::coord_in(temp_array, player_sheeps)) { //если компьютер попал, то количество ходов прибавляется
+					popal = true;
 					hit_counter += COUNT_MOTIONS;
 					PLAYER_HP -= 1;
 					PLAYER_POLE[temp_array[0]][temp_array[1]] = 'X';
 				}
 				else {
-
+					popal = false;
 					PLAYER_POLE[temp_array[0]][temp_array[1]] = '0';
 				}
 

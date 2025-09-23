@@ -37,6 +37,9 @@
     <Filter Include="Исходные файлы\Игра\Pole">
       <UniqueIdentifier>{e77459c4-1b5b-4d01-9a65-97dbe2287f39}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\ARSENIY">
+      <UniqueIdentifier>{3f5e430d-c152-4064-a3b1-5dbd54a4da66}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -113,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="kill_1_deck_sheep_4.cpp">
       <Filter>Исходные файлы\Игра\kill sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="smart_computer_motion.cpp">
+      <Filter>Исходные файлы\Игра</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +208,12 @@
     </ClInclude>
     <ClInclude Include="draw_count_ships.h">
       <Filter>Файлы заголовков\Pole%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="smart_computer_motion.h">
+      <Filter>Файлы заголовков\Игра%28заголовки%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSENIY.h">
+      <Filter>Файлы заголовков\ARSENIY</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
